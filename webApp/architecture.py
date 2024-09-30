@@ -19,10 +19,13 @@ def app():
     st.markdown("""
     ### System HL Overview
     1. **Data Ingestion Layer**: 
-       This layer leverages Hugging Face Transformers and OpenAI's Whisper Medium to convert audio files into text. It subsequently uses ELSER to convert the text into vector embeddings, which are then ingested into Elastic Cloud.
+       This layer leverages Hugging Face Transformers and OpenAI's Whisper Medium to transcribe audio files into text. The text is then transformed into vector embeddings using ELSER, and these embeddings are ingested into Elastic Cloud for further processing.
     
     2. **Multi-Agent Inference Layer**: 
-       This layer is powered by LangGraph and integrated with the Elastic Search Relevance Engine (ESRE) and Azure OpenAI's LLM.
+       This layer is powered by LangGraph integrated with the Elastic Search Relevance Engine (ESRE) and Azure OpenAI's LLM.
+       It comprises three Agents: router agent, RAG analyzer agent, and RAG comparer agent. 
+       The router agent serves as the initial point of contact, directing the workflow by passing control to the appropriate agent based on its assessment.
+       Both the RAG analyzer and RAG comparer agents execute semantic searches to retrieve relevant contextual information related to the input query, which is then provided to the LLM to generate new content.
 
     3. **User Interface**: 
        The application is entirely wrapped in to a Streamlit app.

@@ -1,4 +1,4 @@
-# Voices to Vectors: Multi-Agent : Semantic-Search
+# Voices to Vectors: Multi-Agent RAG Workflow
 
 ## Prerequisites
 
