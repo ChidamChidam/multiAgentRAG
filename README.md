@@ -17,7 +17,7 @@
     ```bash
     python3 -m venv multiAgentRAG
     source multiAgentRAG/bin/activate
-    pip install -r requirements
+    pip install -r requirements.txt
     ```
 2. create "./core/.env" file and populate. you can use './core/.env.sample' as a example file
     ```bash
