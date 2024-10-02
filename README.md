@@ -2,11 +2,11 @@
 
 ## Prerequisites
 
-1. Elastic Cloud
-    1. Create a Hosted Deployment (or) a Serverless Project
-    2. Create ElasticSearch Cluster API KEY
-    3. Create ELSER inference endpoint
-2. Azure OpenAI LLM - EndPoint, Region, API Key, Version, ModelID
+1. [Elastic Cloud](https://cloud.elastic.co/registration?elektra=en-ess-sign-up-page)
+    1. Create a [Hosted Deployment](https://www.elastic.co/guide/en/cloud/current/ec-create-deployment.html) (or) a [Serverless Project](https://www.elastic.co/docs/current/serverless/general/sign-up-trial)
+    2. Create [ElasticSearch Cluster API KEY](https://www.elastic.co/guide/en/kibana/current/api-keys.html)
+    3. Create [ELSER inference endpoint](https://www.elastic.co/guide/en/elasticsearch/reference/current/infer-service-elser.html)
+2. [Azure OpenAI LLM](https://learn.microsoft.com/en-us/azure/ai-services/openai/how-to/create-resource?pivots=web-portal) - EndPoint, Region, API Key, Version, ModelID
 3. Python 3.12.6 or later
 
 ## Installation Steps
